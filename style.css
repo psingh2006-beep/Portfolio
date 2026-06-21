@@ -1,71 +1,122 @@
-body {
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    margin: 0;
-    padding: 30px;
+    background: linear-gradient(135deg,#4f46e5,#2563eb);
+    min-height:100vh;
+    padding:40px 20px;
 }
 
-.container {
-    max-width: 850px;
-    margin: auto;
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+.container{
+    max-width:1000px;
+    margin:auto;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
-h1 {
-    color: #222;
-    margin-bottom: 5px;
+h1{
+    text-align:center;
+    color:#222;
+    margin-bottom:10px;
+    font-size:42px;
 }
 
-h2 {
-    color: #667eea;
-    margin-top: 0;
+h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:20px;
 }
 
-h3 {
-    color: #333;
-    border-bottom: 2px solid #667eea;
-    padding-bottom: 5px;
+h3{
+    margin-top:25px;
+    margin-bottom:15px;
+    color:#333;
+    border-bottom:2px solid #2563eb;
+    padding-bottom:8px;
 }
 
-ul {
-    padding-left: 20px;
+p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:15px;
 }
 
-li {
-    margin-bottom: 5px;
+ul{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    list-style:none;
+    margin-top:10px;
 }
 
-.project {
-    background: #f5f7ff;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 10px;
-    border-left: 4px solid #667eea;
+li{
+    background:#2563eb;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
 }
 
-.project h4 {
-    margin-top: 0;
+.project{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    padding:18px;
+    margin-bottom:15px;
+    border-radius:10px;
+    transition:0.3s;
 }
 
-a {
-    color: #667eea;
-    text-decoration: none;
-    font-weight: bold;
+.project:hover{
+    transform:translateY(-4px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-a:hover {
-    text-decoration: underline;
+.project h4{
+    color:#222;
+    margin-bottom:8px;
 }
 
-p {
-    line-height: 1.6;
+a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding: 20px;
+a:hover{
+    color:#4f46e5;
+}
+
+.contact{
+    margin-top:20px;
+}
+
+.contact a{
+    display:inline-block;
+    margin-right:15px;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:32px;
+    }
+
+    ul{
+        gap:8px;
+    }
+
+    li{
+        font-size:13px;
     }
 }
