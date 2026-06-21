@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #666;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+.project {
+    margin-bottom: 20px;
+}
